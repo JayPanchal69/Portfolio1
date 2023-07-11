@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #39132e;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+    background-color: #3c103a;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 37px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(119, 119, 246);
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.first-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 70px 0;
+}
+
+.first-section>div {
+    width: 30%;
+}
+
+.left-section {
+    font-size: 27px;
+    /* margin: 60px 0; */
+}
+
+.right-section img {
+    width: 82%;
+}
+
+.pure {
+    color: #b900fb;
+}
+
+#element {
+    color: #b900fb;
+}
+
+#second-section {
+    /* height: 63vh; */
+}
+
+.line {
+    margin: 0 80px;
+}
+
+.cards {
+    display: grid;
+    margin: 45px 64px;
+    grid-gap: 23px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.box1 {
+    padding: 50px 60px;
+    background-color: #5e3e3e;
+    border-radius: 15px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.box1:hover {
+    background: #ff004f;
+    transform: translateX(-10px);
+}
+
+h2 {
+    text-align: center;
+    margin: 15px;
+}
+
+p {
+    text-align: center;
+}
+
+h1 {
+    max-width: 80vw;
+    margin: 20px auto;
+    font-size: 32px;
+}
+
+.button .btn {
+    padding: 10px;
+    margin: 22px 0;
+    background-color: red;
+    border-radius: 7px;
+    border: 2px black;
+    color: white;
+    cursor: pointer;
+    transition: background 0.5s, transform 0.5s;
+}
+.button .btn:hover{
+    background-color: rgb(204, 144, 144);
+}
+#third-section{
+    /* height: 60vh; */
+    background-color: rgb(163 74 255);
+}
+.contact-form{
+    display: flex;
+}
+.contact-right{
+    margin:0 150px;
+    width: 35%;
+}
+.contact-right form{
+    display: grid;
+    grid-gap: 22px;
+}
+.contact-right form input ,textarea{
+    padding: 16px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 15px;
+}
+.submit-btn{
+    width: 22%;
+    padding: 4px;
+    border-radius: 5px;
+    border: 0;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    background-color: #c32323;
+}
+.contact-left{
+    width: 30%;
+    margin: 85px 0;
+}
+.contact-h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 11px 0;
+}
+.social-icons{
+    margin: 15px 30px;
+    text-align: center;
+}
+.social-icons a,i{
+    font-size: 35px;
+    padding: 4px;
+    color: white;
+    transition: background 0.5s, transform 0.5s;
+}
+.social-icons a .fa-brands:hover{
+    color: black;
+    transform: translateX(-5px);
+}
+nav .fa-solid{
+    display: none;
+}
+.copyright{
+    background-color: #5e3e3e;
+    padding: 8px;
+    position: relative;
+    top: 15px;
+}
+/* ------------------------------------------------------------------------------------ */
+
+@media (max-width:1318px){
+    .cards{
+        display: flex;
+        margin: 30px 15px;
+    }
+    nav ul li{
+        margin: 0 22px;
+    }
+    .box1{
+        padding: 45px 0px;
+    }
+}
+@media (max-width: 764px) {
+  .left{
+    font-size: 1.5rem;
+}
+    nav ul li {
+        margin: 10px 22px;
+    }
+    .right{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 1.4rem;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+    .left-section{
+        font-size: 23px;
+    }
+}
+@media (max-width: 660px) {
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background-color: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        display: block;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+  
+}
+@media (max-width: 559px){
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 934px) {
+    .contact-right{
+        margin: 0 115px;
+    }
+    .social-icons{
+        margin: 10px 0;
+    }
+    .social-icons a, i {
+        font-size: 25px;
+    }
+}
+@media (max-width: 640px){
+    body{
+        background-color: red;
+    }
+    .contact-form{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact-right{
+        width: 100%;
+        margin: 15px;
+    }
+    .contact-left{
+        width: 100%;
+    }
+}

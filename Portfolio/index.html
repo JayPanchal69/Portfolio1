@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesonal Portfolio web site</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4be4eb8aed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <div class="left">
+                Jay Portfolio
+            </div>
+            <div class="right">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#second-section">About Me</a></li>
+                    <li><a href="#third-section">Contact Me</a></li>
+                    <li><a href="#">Service</a></li>
+                    <i class="fa-solid fa-xmark " onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="first-section">
+            <div class="left-section">
+                Hi! My Name Is <span class="pure">Jay</span>
+                <div>and I am a</div>
+                <span id="element"></span>
+                <div class="button">
+                   <a href="Resume.docx" download><button class="btn">Download Resume</button></a>
+                </div>
+            </div>
+            <div class="right-section">
+                <img src="bg-png.png">
+            </div>
+        </section>
+        <section id="second-section">
+            <hr class="line">
+            <h1>What I know!</h1>
+            <div class="cards">
+                <div class="box1">
+                    <h2>Web Designer</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque illo quos pariatur et, quisquam
+                        labore laudantium recusandae maiores vero, fugiat nemo. Iusto, voluptas!</p>
+                </div>
+                <div class="box1">
+                    <h2>Graphic Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque illo quos pariatur et, quisquam
+                        labore laudantium recusandae maiores vero, fugiat nemo. Iusto, voluptas!</p>
+                </div>
+                <div class="box1">
+                    <h2>Video Editors</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque illo quos pariatur et, quisquam
+                        labore laudantium recusandae maiores vero, fugiat nemo. Iusto, voluptas!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="third-section">
+        <div class="contact-form">
+            <div class="contact-right">
+                <h1 class="contact-h1">Contact Me</h1>
+                <form>
+                    <input type="text" name="Name" placeholder="Enter Your Name" required>
+                    <input type="email" name="Email" placeholder="Enter Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+            <div class="contact-left">
+                <p class="contact-p">Follow Me</p>
+                <div class="social-icons">
+                    <a href="/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="/"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Jay.Created and Upload by Jay</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Desigener', 'Video Editor', 'Web Designer'],
+            typeSpeed: 50,
+        });
+
+        var sidemenu =document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+
+</html>
