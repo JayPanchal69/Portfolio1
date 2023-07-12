@@ -271,9 +271,7 @@ nav .fa-solid{
     }
 }
 @media (max-width: 640px){
-    body{
-        background-color: red;
-    }
+
     .contact-form{
         display: flex;
         flex-wrap: wrap;
